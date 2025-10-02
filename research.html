@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research - A.S. Hauck</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">A.S. Hauck</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="research.html">Research</a></li>
+								<li><a href="publications.html">Publications</a></li>
+								<li><a href="presentations.html">Presentations</a></li>
+								<li><a href="toolbox.html">Computational Toolbox</a></li>
+								<li><a href="cv.html">CV</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Research</h2>
+								<p>Previous research projects at The Pennsylvania State University, DEVCOM Army Research Laboratory, Los Alamos National Laboratory, and Rensselaer Polytechnic Institute.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Radiation Effects preDiction through Experimentally validated Simulation of Gallium Nitride (REDESIGN)</h3>
+									<p><span class="image right"><img src="images/gan_tde_ga_vasp.png" alt="" height="200" /></span>I participate in this project as my graduate research at The Pennsylvania State University under Dr. Miaomiao Jin and Dr. Blair Tuttle. My work supports the defect formation and evolution & defect structure and transport thrusts via simulation and theory. The wide-bandgap semiconductors gallium nitride (GaN), aluminum nitride (AlN), and their alloys (AlGaN) are being studied as radiation-hard alternatives for spacecraft devices and other high-radiation applications. In particular, my research focuses on displacement damage due to non-ionizing energy loss processes. I perform simulations using PSU's Roar Collab and the DoD HPCMP high-performance computing clusters.</p>
+
+									<p>Threshold displacement energies (TDE) describe the minimum amount of energy needed to displace an atom from its lattice site and form a permanent defect. The value is anisotropic, and the overall minimum values for each atom type indicate how radiation resistant a material may be. I created the findTDE software package using Bash and Python to calculate TDE values from high-throughput <i>ab initio</i> and classical molecular dynamics simulations.</p>
+
+									<p>As the defects are generated, new energy levels are introduced into the band gap that can act as trap/recombination sites for charge carriers responsible for current transport. This reduction in carrier density and mobility degrades device performance. A primary mode of carrier capture change the charge state of the defect through nonradiative multiphonon emission. I have performed first principles calculations to determine carrier capture coefficients for all native defects, a gallium/nitrogen divacancy, and a carbon substitutional impurity on a nitrogen site.</p>
+									
+									<h3 class="major">Improved Grain Growth Models through Multi-scale Modeling and Machine Learning</h3>
+									<p><span class="image left"><img src="images/ml_pred.png" alt="" /></span>I participated in the DoD High-Performance Computing Modernization Program (HPCMP) internship through ORISE, working in the Ceramics and Transparent Materials Branch of DEVCOM Army Research Laboratory. Silicon carbide (SiC) is a wide-bandgap semiconductor with a variety of desirable properties leading to its widespread applications across industries like nuclear power, electronic devices, and armor. Grain boundaries influence the material properties important to these uses, magnified further within extreme environments.</p>
+
+									<p>Modeling techniques of grain boundary structures have been well explored but are often limited to atomistic techniques such as molecular dynamics. To improve understanding of material behavior, microscale information was used to create macroscale representations of the grain boundaries. I enabled their use in higher-scale kinetic Monte Carlo modeling to support processing studies via Potts Monte Carlo grain growth with increased accuracy compared to the currently used Read–Shockley model. I automated creation of decision tree-based regression models, trained using a dataset of 332 [100], [110], and [111] tilt and twist grain boundaries generated in β-SiC and tuned to achieve mean absolute percentage errors below 10.0 % with reasonably high coefficients of determination. I produced a script to transform the models from Python to ONNX to enable their use in C++ SPPARKS simulations.</p>
+									
+									<h3 class="major">Generating Models of the Flattop Critical Assembly for Benchmark Experiments</h3>
+									<p><span class="image right"><img src="images/flattop.png" alt="" height="200" /></span>Between graduating from RPI and starting my Ph.D. at PSU, I joined the NEN-2 (Advanced Nuclear Technology) group at Los Alamos National Laboratory as a Graduate Research Intern. In support of nuclear criticality safety efforts, criticality experiments and MCNP modeling are performed for nuclear cross-section benchmarking.</p>
+
+									<p>I generated high-fidelity models of the Flattop critical assembly using Python for MCNP. The Python script served as a framework with classes for each type of assembly component. This enabled quick and frequent changes to piece dimensions as new, detailed measurements were being taken simultaneously. Additionally, small pieces exist that may be added to the assembly to change critical configurations, and the specific configuration can be specified in Python to create the corresponding configuration. Finally, this framework was to be used for adjusting part parameters for uncertainty and sensitivity quantification.</p>
+
+									<h3 class="major">PREFACE: The RPI Summer Engineering Design Program</h3>
+									<p>I developed modules for the Department of Materials Science & Engineering to be used in RPI's 2022 PREFACE program. This outreach program introduced materials science and engineering to 40 high school students across the globe across twelve days. Nine total hands-on activities, demonstrations, and lectures were created, two of which I worked on: 1. Materials processing and diffusion using Python based random walk simulators and measurements of dye diffusion through agar gels and 2. Kinetics and mechanical properties of edible alginate gels.</p>
+
+									<p>I programmed an interactive worksheet in Google Colaboratory to support an experiment demonstrating diffusion with analysis and simulations. I also made dozens of agar plates, wrapped with parafilm, and packaged with other necessary experiment materials to be shipped to the students. To support the alginate gel experiments, I created hundreds of solutions in screw cap vials to be sent to the students.</p>
+									
+									<h3 class="major">Automated Microscopy Image Analysis</h3>
+									<p><span class="image left"><img src="images/tem_ml.png" alt="" /></span>As a Westinghouse Undergraduate Research Fellow, I researched under Dr. Xing Wang with another fellow, Quinton Williams. I also developed communication and professional skills with Dr. Peter Miraldi and all 7 other fellows.</p>
+
+									<p>Quinton and I developed a machine learning program using TensorFlow in Python to automatically characterize helium bubbles in transmission electron microscope (TEM) images of irradiated nickel alloys. We used a UNet model for semantic image segmentation with a dataset of ten TEM images and their corresponding masks. We were able to reach over 98% accuracy with our model, with room for even more improvement, which we were beginning to explore.</p>
+									
+									<h3 class="major">Scientific Software</h3>
+									<p>I create software and packages for radiation damage and semiconductor research, focusing on electronic and atomic scale techniques such as density-functional theory and molecular dynamics. I'm looking to support the research of others in the community by publishing these codes open-source. Primarily, I work with Python, Julia, and Bash, but I also have some experience with C++. Please reach out with any comments, questions, or suggestions for the listed projects.</p>
+									<section class="features">
+										<article>
+											<a href="https://findtde.readthedocs.io/en/latest/" class="image"><img src="images/ftde_logo.png" alt="" /></a>
+											<h3 class="major">findTDE</h3>
+											<p>Calculate threshold displacement energies using <i>ab initio</i> and classical molecular dynamics.</p>
+											<a href="https://findtde.readthedocs.io/en/latest/" class="special">Learn more</a>
+											<a href="https://github.com/hauck-as/findTDE" class="special">GitHub</a>
+										</article>
+										<article>
+											<a href="https://raddefects.readthedocs.io/en/latest/" class="image"><img src="images/raddef_logo.png" alt="" /></a>
+											<h3 class="major">radDefects</h3>
+											<p>Analyze properties of radiation-induced defects from first principles.</p>
+											<a href="https://raddefects.readthedocs.io/en/latest/" class="special">Learn more</a>
+											<a href="https://github.com/hauck-as/radDefects" class="special">GitHub</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="https://github.com/hauck-as" class="button">Browse All</a></li>
+									</ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Contact</h2>
+							<p>For research questions, please feel free to reach out!</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-building">
+									Hallowell Building [317]<br />
+									University Park, PA 16802
+								</li>
+								<li class="icon solid fa-envelope"><a href="mailto:ash5615@psu.edu">ash5615@psu.edu</a></li>
+								<li class="icon brands fa-google"><a href="https://scholar.google.com/citations?user=FxEjbeIAAAAJ&hl=en&authuser=1&oi=sra">Google Scholar</a></li>
+								<li class="icon brands fa-orcid"><a href="https://orcid.org/0000-0002-6402-2343">ORCID</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/hauck-as">GitHub</a></li>
+								<li class="icon brands fa-linkedin-in"><a href="http://www.linkedin.com/in/hauck-as">LinkedIn</a></li>
+								<li class="icon brands fa-instagram"><a href="https://instagram.com/hauck.as">Instagram</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Alexander Hauck. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
