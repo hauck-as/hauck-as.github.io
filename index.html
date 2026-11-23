@@ -150,7 +150,9 @@
 						<div class="inner">
 							<h2 class="major">Contact</h2>
 							<p>For research questions, please feel free to reach out!</p>
-							<form method="post" action="#">
+							<form method="POST" action="https://api.web3forms.com/submit">
+								<input type="hidden" name="access_key" value="045c908b-d7e3-43dc-b485-496fc84feaf2">
+								
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -165,6 +167,9 @@
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
 								</div>
+
+								<div class="h-captcha" data-captcha="true"></div>
+
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
@@ -196,6 +201,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://web3forms.com/client/script.js" async defer></script>
+			<script>
+			const form = document.getElementById('045c908b-d7e3-43dc-b485-496fc84feaf2');
+
+			form.addEventListener('submit', function(e) {
+
+				const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+				if (!hCaptcha) {
+					e.preventDefault();
+					alert("Please fill out captcha field")
+					return
+				}
+			});
+			</script>
 
 	</body>
 </html>
