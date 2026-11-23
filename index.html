@@ -18,29 +18,8 @@
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">A.S. Hauck</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li><a href="publications.html">Publications</a></li>
-								<li><a href="presentations.html">Presentations</a></li>
-								<li><a href="toolbox.html">Computational Toolbox</a></li>
-								<li><a href="cv.html">CV</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+				<!-- Header & Menu -->
+					<script>HTMLImporter.import("header.html");</script>
 
 				<!-- Banner -->
 					<section id="banner">
@@ -146,55 +125,8 @@
 					</section>
 
 				<!-- Footer -->
-				<script>HTMLImporter.import("contact.html");</script>
-				<!--
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Contact</h2>
-							<p>For research questions, please feel free to reach out!</p>
-							<form method="POST" action="https://api.web3forms.com/submit">
-								<input type="hidden" name="access_key" value="045c908b-d7e3-43dc-b485-496fc84feaf2">
-								
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-
-								<div class="h-captcha" data-captcha="true"></div>
-
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-building">
-									Hallowell Building [317]<br />
-									University Park, PA 16802
-								</li>
-								<li class="icon solid fa-envelope"><a href="mailto:ash5615@psu.edu">ash5615@psu.edu</a></li>
-								<li class="icon brands fa-google"><a href="https://scholar.google.com/citations?user=FxEjbeIAAAAJ&hl=en&authuser=1&oi=sra">Google Scholar</a></li>
-								<li class="icon brands fa-orcid"><a href="https://orcid.org/0000-0002-6402-2343">ORCID</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/hauck-as">GitHub</a></li>
-								<li class="icon brands fa-linkedin-in"><a href="http://www.linkedin.com/in/hauck-as">LinkedIn</a></li>
-								<li class="icon brands fa-instagram"><a href="https://instagram.com/hauck.as">Instagram</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Alexander Hauck. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-				-->
-
+					<script>HTMLImporter.import("contact.html");</script>
+					
 			</div>
 
 		<!-- Scripts -->
@@ -205,23 +137,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/templater.js"></script>
 			<script src="assets/js/main.js"></script>
-			<!--
-			<script src="https://web3forms.com/client/script.js" async defer></script>
-			<script>
-			const form = document.getElementById('045c908b-d7e3-43dc-b485-496fc84feaf2');
-
-			form.addEventListener('submit', function(e) {
-
-				const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-				if (!hCaptcha) {
-					e.preventDefault();
-					alert("Please fill out captcha field")
-					return
-				}
-			});
-			</script>
-		-->
 
 	</body>
 </html>
